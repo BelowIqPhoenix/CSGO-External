@@ -42,8 +42,8 @@ int main()
 	globals::engine = mem.GetModuleAddress("engine.dll");
 
 	std::cout << "[+] Process ID = " << mem.processId << std::endl;
-	std::cout << "[+] client.dll = " << globals::client << std::endl;
-	std::cout << "[+] engine.dll = " << globals::engine << std::endl;
+	std::cout << "[+] client.dll = 0x" << (DWORD*)globals::client << std::endl;
+	std::cout << "[+] engine.dll = 0x" << (DWORD*)globals::engine << std::endl;
 
 	std::cout << "\n";
 
